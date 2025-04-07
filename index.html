@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bathroom2you</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="title">🛁 Bathroom2you Catalog</h1>
+
+  <div class="shelf">
+    <div class="book" onclick="openCatalog('catalogs/catalog1.pdf')">
+        <img src="./images/cover1.jpg" alt="Catalog 1">
+
+      <p>Catalog 1</p>
+    </div>
+    <div class="book" onclick="openCatalog('catalogs/catalog2.pdf')">
+        <img src="./images/cover2.png" alt="Catalog 2" />
+      <p>Catalog 2</p>
+    </div>
+  </div>
+
+  <script>
+    function openCatalog(link) {
+      window.open(link, "_blank");
+    }
+  </script>
+</body>
+</html>
