@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bathroom2you</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f5eedc;
+      background-image: url("images/shelf.jpg");
+      background-size: cover;
       margin: 0;
       padding: 0;
     }
@@ -19,45 +19,44 @@
       font-size: 2rem;
       font-weight: bold;
       color: #5a3921;
+      background-color: rgba(255, 255, 255, 0.6);
     }
 
     .catalog-container {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 2rem;
+      gap: 3rem;
       padding: 2rem;
+      flex-wrap: wrap;
     }
 
     .catalog {
-      background: #fff;
+      width: 180px;
+      background: rgba(255, 255, 255, 0.9);
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      width: 200px;
       text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .catalog:hover {
-      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding-bottom: 1rem;
     }
 
     .catalog img {
       width: 100%;
-      height: auto;
+      height: 240px;
+      object-fit: cover;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
     }
 
     .catalog a {
       display: block;
-      padding: 1rem;
-      text-decoration: none;
+      margin-top: 0.5rem;
       font-weight: bold;
-      color: #2c3e50;
+      color: #4a148c;
+      text-decoration: none;
     }
 
     .catalog a:hover {
-      color: #8e44ad;
+      color: #d81b60;
     }
   </style>
 </head>
