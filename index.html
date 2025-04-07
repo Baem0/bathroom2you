@@ -6,19 +6,23 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1 class="title">🛁 Bathroom2you Catalog</h1>
-
-  <div class="shelf">
-    <div class="book" onclick="openCatalog('catalogs/catalog1.pdf')">
-        <img src="./images/cover1.jpg" alt="Catalog 1">
-
-      <p>Catalog 1</p>
-    </div>
-    <div class="book" onclick="openCatalog('catalogs/catalog2.pdf')">
-        <img src="./images/cover2.png" alt="Catalog 2" />
-      <p>Catalog 2</p>
-    </div>
-  </div>
+    <div class="bookshelf">
+        <img src="images/background.jpg" class="bg" />
+      
+        <div class="book" style="top: 80px; left: 100px;">
+          <a href="catalog1.pdf" target="_blank">
+            <img src="images/cover1.jpg" />
+            <p>Catalog 1</p>
+          </a>
+        </div>
+      
+        <div class="book" style="top: 80px; left: 280px;">
+          <a href="catalog2.pdf" target="_blank">
+            <img src="images/cover2.jpg" />
+            <p>Catalog 2</p>
+          </a>
+        </div>
+      </div>
 
   <script>
     function openCatalog(link) {
