@@ -11,7 +11,7 @@
       font-family: 'Kanit', sans-serif;
       background: url('images/wood-bg.png') no-repeat center top;
       background-size: cover;
-      height: 100vh;
+      min-height: 100vh;
       position: relative;
     }
 
@@ -24,7 +24,7 @@
 
     .catalog-container {
       position: absolute;
-      top: 250px; /* ปรับตรงนี้ให้พอดีแนวกลางช่องไม้แรก */
+      top: 240px; /* <<< ปรับให้ตรงกลางช่องแรก */
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -33,7 +33,7 @@
     }
 
     .catalog-card {
-      width: 150px;
+      width: 140px;
       text-align: center;
       background: white;
       border-radius: 12px;
@@ -47,6 +47,7 @@
 
     .catalog-card img {
       width: 100%;
+      height: auto;
       border-radius: 12px 12px 0 0;
     }
 
@@ -72,4 +73,3 @@
   </div>
 </body>
 </html>
-``
