@@ -23,14 +23,14 @@
     .catalog-container {
       display: flex;
       gap: 40px;
-      padding-left: 70px; /* ขยับให้หนังสือเริ่มตรงช่อง */
+      padding-left: 70px;
       padding-right: 40px;
-      margin-top: 192px; /* ขยับหนังสือลงให้พอดีช่อง */
+      margin-top: 120px; /* ปรับให้พอดีช่องไม้ */
     }
 
     .catalog-card {
       width: 120px;
-      height: 180px; /* ให้พอดีช่องไม้ */
+      height: 180px;
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -64,22 +64,23 @@
 </head>
 <body>
   <h1>🛁 Bathroom2you Catalog</h1>
+
   <div class="catalog-container">
     <!-- Catalog 1 -->
-<div class="card" style="left: 90px; top: 60px;">
-  <a href="catalog1.html">
-      <img src="images/catalog1.jpg" alt="Catalog 1">
-      <p>Catalog 1</p>
-    </a>
-  </div>
+    <div class="catalog-card">
+      <a href="catalog1.html">
+        <img src="images/catalog1.jpg" alt="Catalog 1">
+        <p>Catalog 1</p>
+      </a>
+    </div>
 
-<!-- Catalog 2 -->
-<div class="card" style="left: 210px; top: 60px;">
-  <a href="catalog2.html">
-      <img src="images/catalog2.jpg" alt="Catalog 2">
-      <p>Catalog 2</p>
-    </a>
-  </div>
+    <!-- Catalog 2 -->
+    <div class="catalog-card">
+      <a href="catalog2.html">
+        <img src="images/catalog2.jpg" alt="Catalog 2">
+        <p>Catalog 2</p>
+      </a>
+    </div>
   </div>
 </body>
 </html>
