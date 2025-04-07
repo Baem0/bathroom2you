@@ -24,10 +24,13 @@
     .catalog-container {
       position: relative;
       margin-top: 120px;
+      padding-left: 20px; /* ให้หนังสือชิดขอบซ้าย */
     }
 
     .catalog-card {
-      position: absolute;
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
       width: 120px;
       height: 180px;
       background: white;
@@ -62,10 +65,6 @@
       color: purple;
       font-size: 0.9rem;
     }
-
-    /* ตำแหน่ง */
-    .catalog1 { left: 80px; top: 0; }
-    .catalog2 { left: 210px; top: 0; }
   </style>
 </head>
 <body>
@@ -73,16 +72,16 @@
 
   <div class="catalog-container">
     <!-- Catalog 1 -->
-    <div class="catalog-card catalog1">
-      <a href="catalogs/catalog1.html">
+    <div class="catalog-card">
+      <a href="catalogs/catalog1.pdf" target="_blank">
         <img src="images/cover1.jpg" alt="Catalog 1">
         <p>Catalog 1</p>
       </a>
     </div>
 
     <!-- Catalog 2 -->
-    <div class="catalog-card catalog2">
-      <a href="catalogs/catalog2.html">
+    <div class="catalog-card">
+      <a href="catalogs/catalog2.pdf" target="_blank">
         <img src="images/cover2.png" alt="Catalog 2">
         <p>Catalog 2</p>
       </a>
