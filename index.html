@@ -3,58 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bathroom2you Catalog</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fdf6e3;
-      text-align: center;
-    }
-
-    h1 {
-      padding: 20px;
-      font-size: 2.5rem;
-      color: #5a3e1b;
-    }
-
-    .bookshelf {
-      position: relative;
-      width: 100%;
-      max-width: 1200px;
-      margin: auto;
-      background: url('https://i.imgur.com/BK9WnlH.png') no-repeat center/contain;
-      height: 600px;
-    }
-
-    .book {
-      position: absolute;
-      height: 180px;
-      transition: transform 0.3s;
-      cursor: pointer;
-    }
-
-    .book:hover {
-      transform: scale(1.05);
-    }
-
-    .label {
-      position: absolute;
-      top: 185px;
-      width: 100%;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #333;
-    }
-  </style>
+  <title>Bathroom2you</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <h1>🛁 Bathroom2you Catalog</h1>
+<body style="background-image: url('images/wood-bg.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
 
-  <div class="bookshelf">
-    <img src="https://i.imgur.com/fNfNFaM.png" class="book" style="top: 100px; left: 200px;">
-    <img src="https://i.imgur.com/6Rw70ti.png" class="book" style="top: 100px; left: 400px;">
-    <img src="https://i.imgur.com/5HEPfqA.png" class="book" style="top: 320px; left: 300px;">
+  <div style="padding: 20px;">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <img src="images/cover1.jpg" alt="Catalog 1" style="width: 200px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 10px;">
+      <a href="catalogs/catalog1.pdf" target="_blank">Catalog 1</a>
+    </div>
+
+    <div style="height: 20px;"></div> <!-- spacing -->
+
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <img src="images/cover2.png" alt="Catalog 2" style="width: 200px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 10px;">
+      <a href="catalogs/catalog2.pdf" target="_blank">Catalog 2</a>
+    </div>
   </div>
+
 </body>
 </html>
