@@ -2,32 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Bathroom2you</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bathroom2you Catalog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf6e3;
+      text-align: center;
+    }
+
+    h1 {
+      padding: 20px;
+      font-size: 2.5rem;
+      color: #5a3e1b;
+    }
+
+    .bookshelf {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      background: url('https://i.imgur.com/BK9WnlH.png') no-repeat center/contain;
+      height: 600px;
+    }
+
+    .book {
+      position: absolute;
+      height: 180px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .book:hover {
+      transform: scale(1.05);
+    }
+
+    .label {
+      position: absolute;
+      top: 185px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-    <div class="bookshelf">
-        <img src="images/background.jpg" class="bg" />
-      
-        <div class="book" style="top: 80px; left: 100px;">
-          <a href="catalog1.pdf" target="_blank">
-            <img src="images/cover1.jpg" />
-            <p>Catalog 1</p>
-          </a>
-        </div>
-      
-        <div class="book" style="top: 80px; left: 280px;">
-          <a href="catalog2.pdf" target="_blank">
-            <img src="images/cover2.jpg" />
-            <p>Catalog 2</p>
-          </a>
-        </div>
-      </div>
+  <h1>🛁 Bathroom2you Catalog</h1>
 
-  <script>
-    function openCatalog(link) {
-      window.open(link, "_blank");
-    }
-  </script>
+  <div class="bookshelf">
+    <img src="https://i.imgur.com/fNfNFaM.png" class="book" style="top: 100px; left: 200px;">
+    <img src="https://i.imgur.com/6Rw70ti.png" class="book" style="top: 100px; left: 400px;">
+    <img src="https://i.imgur.com/5HEPfqA.png" class="book" style="top: 320px; left: 300px;">
+  </div>
 </body>
 </html>
