@@ -6,11 +6,16 @@
   <title>Bathroom2you Catalog</title>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Kanit', sans-serif;
-      background-color: #f5f5f5;
-      overflow-x: hidden;
+      background: url('images/wood-bg.png') no-repeat center top;
+      background-size: cover;
+      background-attachment: fixed; /* ให้พื้นหลังไม่เลื่อน */
     }
 
     h1 {
@@ -18,33 +23,26 @@
       padding: 20px 0;
       font-size: 2rem;
       color: #4b2e13;
+      background-color: rgba(255,255,255,0.6);
+      margin: 0;
     }
 
-    .shelf-container {
+    .bookshelf {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 40px;
-      padding-bottom: 60px;
+      gap: 60px; /* ระยะห่างระหว่างแถว */
+      padding: 60px 0;
     }
 
-    .shelf {
-      width: 100%;
-      max-width: 1200px;
-      height: 200px;
-      background: url('images/wood-bg.png') no-repeat center;
-      background-size: cover;
+    .shelf-row {
       display: flex;
-      justify-content: start;
-      align-items: flex-end;
-      padding: 0 40px;
-      gap: 30px;
-      position: relative;
+      gap: 40px;
     }
 
     .catalog-card {
       width: 120px;
-      height: 160px;
+      height: 180px;
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -65,7 +63,7 @@
 
     .catalog-card img {
       width: 100%;
-      height: 120px;
+      height: 130px;
       object-fit: cover;
       border-radius: 12px 12px 0 0;
     }
@@ -80,11 +78,10 @@
   </style>
 </head>
 <body>
-  <h1>🛁 Bathroom2you Catalog</h1>
+  <h1>🚱 Bathroom2you Catalog</h1>
 
-  <div class="shelf-container">
-    <!-- ชั้นที่ 1 -->
-    <div class="shelf">
+  <div class="bookshelf">
+    <div class="shelf-row">
       <div class="catalog-card">
         <a href="catalogs/catalog1.pdf" target="_blank">
           <img src="images/cover1.jpg" alt="Catalog 1">
@@ -98,21 +95,20 @@
         </a>
       </div>
     </div>
-
-    <!-- ชั้นที่ 2 -->
-    <div class="shelf">
-      <!-- เพิ่มได้ตามต้องการ -->
+    <!-- เพิ่ม shelf-row อีก 3 แถวตามต้องการ -->
+    <div class="shelf-row">
+      <div class="catalog-card"><a href="#"><img src="images/cover1.jpg"><p>Catalog 3</p></a></div>
+      <div class="catalog-card"><a href="#"><img src="images/cover2.png"><p>Catalog 4</p></a></div>
     </div>
-
-    <!-- ชั้นที่ 3 -->
-    <div class="shelf">
-      <!-- เพิ่มได้ตามต้องการ -->
+    <div class="shelf-row">
+      <div class="catalog-card"><a href="#"><img src="images/cover1.jpg"><p>Catalog 5</p></a></div>
+      <div class="catalog-card"><a href="#"><img src="images/cover2.png"><p>Catalog 6</p></a></div>
     </div>
-
-    <!-- ชั้นที่ 4 -->
-    <div class="shelf">
-      <!-- เพิ่มได้ตามต้องการ -->
+    <div class="shelf-row">
+      <div class="catalog-card"><a href="#"><img src="images/cover1.jpg"><p>Catalog 7</p></a></div>
+      <div class="catalog-card"><a href="#"><img src="images/cover2.png"><p>Catalog 8</p></a></div>
     </div>
   </div>
+
 </body>
 </html>
