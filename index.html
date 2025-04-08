@@ -2,31 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bathroom2you Catalog</title>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
       font-family: 'Kanit', sans-serif;
-      overflow: hidden;
     }
 
-    .main-wrapper {
-      width: 1920px;
-      height: 1080px;
-      margin: 0 auto;
+    body {
+      background: url('images/wood-bg.png') no-repeat center center;
+      background-size: 100% 100%;
       position: relative;
-      overflow: hidden;
-    }
-
-    .background-img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
     }
 
     h1 {
@@ -36,22 +32,22 @@
       text-align: center;
       font-size: 2rem;
       color: #4b2e13;
-      z-index: 2;
+      z-index: 10;
     }
 
     .catalog-row {
       position: absolute;
       display: flex;
       justify-content: center;
-      gap: 40px;
       width: 100%;
-      z-index: 2;
+      gap: 40px;
+      z-index: 5;
     }
 
-    .row-1 { top: 250px; }
-    .row-2 { top: 470px; }
-    .row-3 { top: 690px; }
-    .row-4 { top: 910px; }
+    .row-1 { top: 180px; }
+    .row-2 { top: 390px; }
+    .row-3 { top: 600px; }
+    .row-4 { top: 810px; }
 
     .catalog-card {
       width: 120px;
@@ -91,35 +87,27 @@
   </style>
 </head>
 <body>
-  <div class="main-wrapper">
-    <img src="images/wood-bg.png" alt="Background" class="background-img">
-    <h1>🚽 Bathroom2you Catalog</h1>
+  <h1>🛁 Bathroom2you Catalog</h1>
 
-    <div class="catalog-row row-1">
-      <div class="catalog-card">
-        <a href="catalogs/catalog1.pdf" target="_blank">
-          <img src="images/cover1.jpg" alt="Catalog 1">
-          <p>Catalog 1</p>
-        </a>
-      </div>
-
-      <div class="catalog-card">
-        <a href="catalogs/catalog2.pdf" target="_blank">
-          <img src="images/cover2.png" alt="Catalog 2">
-          <p>Catalog 2</p>
-        </a>
-      </div>
-
-      <div class="catalog-card">
-        <a href="https://anyflip.com/ptylx/ulsc/" target="_blank">
-          <img src="https://online.anyflip.com/ptylx/ulsc/files/shot.jpg" alt="Catalog 3">
-          <p>Catalog 3</p>
-        </a>
-      </div>
+  <div class="catalog-row row-1">
+    <div class="catalog-card">
+      <a href="catalogs/catalog1.pdf" target="_blank">
+        <img src="images/cover1.jpg" alt="Catalog 1">
+        <p>Catalog 1</p>
+      </a>
     </div>
-
-    <!-- เพิ่ม row-2, row-3, row-4 ตามต้องการได้เลย -->
-
+    <div class="catalog-card">
+      <a href="catalogs/catalog2.pdf" target="_blank">
+        <img src="images/cover2.png" alt="Catalog 2">
+        <p>Catalog 2</p>
+      </a>
+    </div>
+    <div class="catalog-card">
+      <a href="https://anyflip.com/ptylx/ulsc/" target="_blank">
+        <img src="https://online.anyflip.com/ptylx/ulsc/files/shot.jpg" alt="Catalog 3">
+        <p>Catalog 3</p>
+      </a>
+    </div>
   </div>
 </body>
 </html>
