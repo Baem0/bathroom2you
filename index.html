@@ -8,52 +8,51 @@
   <style>
     * {
       box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
       padding: 0;
+      font-family: 'Kanit', sans-serif;
+      height: 100%;
+      background-color: #e5e5e5;
     }
 
     body {
-      font-family: 'Kanit', sans-serif;
-      background-color: #e5e0d8;
+      background: url('images/wood-bg.png') repeat-y center top;
+      background-size: 100% auto;
       overflow-x: hidden;
     }
 
     h1 {
       text-align: center;
-      padding: 20px 10px;
+      padding-top: 30px;
       font-size: 2rem;
       color: #4b2e13;
-      background: #fff4e6;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      z-index: 10;
-      position: sticky;
-      top: 0;
     }
 
-    .bookcase {
-      position: relative;
-      width: 100%;
-      min-height: 100vh;
+    .catalog-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 0;
     }
 
     .shelf {
-      position: relative;
       width: 100%;
-      height: 200px;
-      background: url('images/wood-bg.png') repeat-x center;
-      background-size: contain;
+      max-width: 1000px;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      padding-top: 40px;
+      gap: 40px;
+      margin-bottom: 110px; /* ช่องว่างระหว่างชั้นไม้ */
+      position: relative;
     }
 
     .catalog-card {
       width: 120px;
-      height: 160px;
+      height: 180px;
       background: white;
       border-radius: 12px;
-      margin: 0 20px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       text-align: center;
       transition: transform 0.2s;
@@ -65,32 +64,32 @@
     }
 
     .catalog-card a {
+      display: block;
       text-decoration: none;
       color: inherit;
-      display: block;
     }
 
     .catalog-card img {
       width: 100%;
-      height: 120px;
+      height: 130px;
       object-fit: cover;
       border-radius: 12px 12px 0 0;
     }
 
     .catalog-card p {
       margin: 0;
-      padding: 6px;
+      padding: 8px;
       font-weight: bold;
+      color: purple;
       font-size: 0.9rem;
-      color: #4b2e13;
-      background: #fff;
     }
   </style>
 </head>
 <body>
   <h1>🛁 Bathroom2you Catalog</h1>
+  <div class="catalog-wrapper">
 
-  <div class="bookcase">
+    <!-- ชั้นที่ 1 -->
     <div class="shelf">
       <div class="catalog-card">
         <a href="catalogs/catalog1.pdf" target="_blank">
@@ -106,10 +105,22 @@
       </div>
     </div>
 
-    <!-- เพิ่มชั้นไม้ว่างเปล่าไว้สำรอง ใช้เพิ่มภายหลังได้ -->
-    <div class="shelf"></div>
-    <div class="shelf"></div>
-    <div class="shelf"></div>
+    <!-- ชั้นที่ 2 (เพิ่มได้ตามต้องการ) -->
+    <div class="shelf">
+      <div class="catalog-card">
+        <a href="#">
+          <img src="images/cover1.jpg" alt="Catalog 3">
+          <p>Catalog 3</p>
+        </a>
+      </div>
+      <div class="catalog-card">
+        <a href="#">
+          <img src="images/cover2.png" alt="Catalog 4">
+          <p>Catalog 4</p>
+        </a>
+      </div>
+    </div>
+
   </div>
 </body>
 </html>
