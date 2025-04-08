@@ -2,70 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bathroom2you Catalog</title>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
       font-family: 'Kanit', sans-serif;
-      background-color: #eae2d6;
+      background-color: #e5e0d8;
       overflow-x: hidden;
     }
 
     h1 {
       text-align: center;
-      padding: 1rem;
+      padding: 20px 10px;
       font-size: 2rem;
       color: #4b2e13;
-      background-color: #fff3e6;
+      background: #fff4e6;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 10;
       position: sticky;
       top: 0;
-      z-index: 10;
     }
 
-    .bookshelf {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
-      padding: 2rem 1rem;
-    }
-
-    .shelf-row {
+    .bookcase {
       position: relative;
       width: 100%;
-      max-width: 1000px;
-      height: 220px;
+      min-height: 100vh;
     }
 
-    .shelf-bg {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
-    }
-
-    .catalog-row {
+    .shelf {
       position: relative;
-      z-index: 1;
+      width: 100%;
+      height: 200px;
+      background: url('images/wood-bg.png') repeat-x center;
+      background-size: contain;
       display: flex;
       justify-content: center;
-      align-items: flex-end;
-      height: 100%;
-      gap: 40px;
-      padding-bottom: 30px; /* ตำแหน่งวางบนร่องไม้ */
+      align-items: flex-start;
+      padding-top: 40px;
     }
 
     .catalog-card {
       width: 120px;
+      height: 160px;
       background: white;
       border-radius: 12px;
+      margin: 0 20px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       text-align: center;
       transition: transform 0.2s;
@@ -76,69 +64,52 @@
       transform: scale(1.05);
     }
 
+    .catalog-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
     .catalog-card img {
       width: 100%;
-      height: 130px;
+      height: 120px;
       object-fit: cover;
       border-radius: 12px 12px 0 0;
     }
 
     .catalog-card p {
       margin: 0;
-      padding: 8px;
+      padding: 6px;
       font-weight: bold;
-      color: purple;
       font-size: 0.9rem;
+      color: #4b2e13;
+      background: #fff;
     }
   </style>
 </head>
 <body>
   <h1>🛁 Bathroom2you Catalog</h1>
-  <div class="bookshelf">
 
-    <!-- Shelf 1 -->
-    <div class="shelf-row">
-      <img class="shelf-bg" src="images/wood-bg.png" alt="shelf">
-      <div class="catalog-row">
-        <div class="catalog-card">
-          <a href="catalogs/catalog1.pdf" target="_blank">
-            <img src="images/cover1.jpg" alt="Catalog 1">
-            <p>Catalog 1</p>
-          </a>
-        </div>
-        <div class="catalog-card">
-          <a href="catalogs/catalog2.pdf" target="_blank">
-            <img src="images/cover2.png" alt="Catalog 2">
-            <p>Catalog 2</p>
-          </a>
-        </div>
+  <div class="bookcase">
+    <div class="shelf">
+      <div class="catalog-card">
+        <a href="catalogs/catalog1.pdf" target="_blank">
+          <img src="images/cover1.jpg" alt="Catalog 1">
+          <p>Catalog 1</p>
+        </a>
+      </div>
+      <div class="catalog-card">
+        <a href="catalogs/catalog2.pdf" target="_blank">
+          <img src="images/cover2.png" alt="Catalog 2">
+          <p>Catalog 2</p>
+        </a>
       </div>
     </div>
 
-    <!-- Shelf 2 -->
-    <div class="shelf-row">
-      <img class="shelf-bg" src="images/wood-bg.png" alt="shelf">
-      <div class="catalog-row">
-        <!-- ว่างไว้ หรือเพิ่มหนังสือใหม่ -->
-      </div>
-    </div>
-
-    <!-- Shelf 3 -->
-    <div class="shelf-row">
-      <img class="shelf-bg" src="images/wood-bg.png" alt="shelf">
-      <div class="catalog-row">
-        <!-- ว่างไว้ หรือเพิ่มหนังสือใหม่ -->
-      </div>
-    </div>
-
-    <!-- Shelf 4 -->
-    <div class="shelf-row">
-      <img class="shelf-bg" src="images/wood-bg.png" alt="shelf">
-      <div class="catalog-row">
-        <!-- ว่างไว้ หรือเพิ่มหนังสือใหม่ -->
-      </div>
-    </div>
-
+    <!-- เพิ่มชั้นไม้ว่างเปล่าไว้สำรอง ใช้เพิ่มภายหลังได้ -->
+    <div class="shelf"></div>
+    <div class="shelf"></div>
+    <div class="shelf"></div>
   </div>
 </body>
 </html>
