@@ -9,36 +9,48 @@
     body {
       margin: 0;
       font-family: 'Kanit', sans-serif;
-      background: url('images/wood-bg.png') no-repeat center top;
-      background-size: cover;
-      height: 100vh;
+      background-color: #f5f5f5;
     }
 
     h1 {
       text-align: center;
-      padding-top: 10px;
+      padding: 20px 0;
       font-size: 2rem;
       color: #4b2e13;
     }
 
-    .catalog-container {
+    .bookshelf {
       position: relative;
-      margin-top: 600px;
-      padding-left: 20px; /* ให้หนังสือชิดขอบซ้าย */
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
     }
 
+    .shelf-img {
+      width: 100%;
+      display: block;
+    }
+
+    .catalog-row {
+      position: absolute;
+      left: 60px;
+      display: flex;
+      gap: 40px;
+    }
+
+    /* ปรับให้หนังสือวางตรงกับชั้น */
+    .catalog-row.row-1 { top: 105px; }
+    /* เพิ่ม row-2, row-3 ได้ตามต้องการ */
+
     .catalog-card {
-      position: relative;
-      display: inline-block;
-      margin-right: 40px;
       width: 120px;
       height: 180px;
-      background:white;
+      background: white;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       text-align: center;
-      transition: transform 0.2s;
       overflow: hidden;
+      transition: transform 0.2s;
     }
 
     .catalog-card:hover {
@@ -70,21 +82,25 @@
 <body>
   <h1>🛁 Bathroom2you Catalog</h1>
 
-  <div class="catalog-container">
-    <!-- Catalog 1 -->
-    <div class="catalog-card">
-      <a href="catalogs/catalog1.pdf" target="_blank">
-        <img src="images/cover1.jpg" alt="Catalog 1">
-        <p>Catalog 1</p>
-      </a>
-    </div>
+  <div class="bookshelf">
+    <!-- ชั้นไม้ -->
+    <img src="images/bookshelf.png" alt="Wooden Shelf" class="shelf-img">
 
-    <!-- Catalog 2 -->
-    <div class="catalog-card">
-      <a href="catalogs/catalog2.pdf" target="_blank">
-        <img src="images/cover2.png" alt="Catalog 2">
-        <p>Catalog 2</p>
-      </a>
+    <!-- แถวหนังสือ วางตรงชั้นที่ 1 -->
+    <div class="catalog-row row-1">
+      <div class="catalog-card">
+        <a href="catalogs/catalog1.pdf" target="_blank">
+          <img src="images/cover1.jpg" alt="Catalog 1">
+          <p>Catalog 1</p>
+        </a>
+      </div>
+
+      <div class="catalog-card">
+        <a href="catalogs/catalog2.pdf" target="_blank">
+          <img src="images/cover2.png" alt="Catalog 2">
+          <p>Catalog 2</p>
+        </a>
+      </div>
     </div>
   </div>
 </body>
