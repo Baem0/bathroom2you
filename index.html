@@ -9,54 +9,43 @@
     body {
       margin: 0;
       font-family: 'Kanit', sans-serif;
-      background: url('images/wood-bg.png') repeat-y center top fixed;
-      background-size: cover;
+      background-color: #f5f5f5;
       overflow-x: hidden;
     }
 
     h1 {
-      position: fixed;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
       text-align: center;
-      font-size: 2.5rem;
+      padding: 20px 0;
+      font-size: 2rem;
       color: #4b2e13;
-      background: rgba(255, 255, 255, 0.8);
-      padding: 8px 16px;
-      border-radius: 12px;
-      z-index: 10;
+    }
+
+    .shelf-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding-bottom: 60px;
     }
 
     .shelf {
-      position: relative;
-      margin-top: 150px;
-      text-align: center;
-    }
-
-    .shelf img {
       width: 100%;
-      max-width: 1000px;
-      height: auto;
-    }
-
-    .catalog-container {
-      position: absolute;
-      top: 40px; /* ตรงกับชั้น */
-      left: 50%;
-      transform: translateX(-50%);
+      max-width: 1200px;
+      height: 200px;
+      background: url('images/wood-bg.png') no-repeat center;
+      background-size: cover;
       display: flex;
-      justify-content: center;
-      gap: 40px;
-      width: 100%;
-      max-width: 1000px;
-      z-index: 5;
+      justify-content: start;
+      align-items: flex-end;
+      padding: 0 40px;
+      gap: 30px;
+      position: relative;
     }
 
     .catalog-card {
       width: 120px;
-      height: 180px;
-      background:white;
+      height: 160px;
+      background: white;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       text-align: center;
@@ -76,7 +65,7 @@
 
     .catalog-card img {
       width: 100%;
-      height: 130px;
+      height: 120px;
       object-fit: cover;
       border-radius: 12px 12px 0 0;
     }
@@ -91,21 +80,17 @@
   </style>
 </head>
 <body>
-
   <h1>🛁 Bathroom2you Catalog</h1>
 
-  <div class="shelf">
-    <img src="images/wood-bg.png" alt="Wooden Shelf">
-    <div class="catalog-container">
-      <!-- Catalog 1 -->
+  <div class="shelf-container">
+    <!-- ชั้นที่ 1 -->
+    <div class="shelf">
       <div class="catalog-card">
         <a href="catalogs/catalog1.pdf" target="_blank">
           <img src="images/cover1.jpg" alt="Catalog 1">
           <p>Catalog 1</p>
         </a>
       </div>
-
-      <!-- Catalog 2 -->
       <div class="catalog-card">
         <a href="catalogs/catalog2.pdf" target="_blank">
           <img src="images/cover2.png" alt="Catalog 2">
@@ -113,7 +98,21 @@
         </a>
       </div>
     </div>
-  </div>
 
+    <!-- ชั้นที่ 2 -->
+    <div class="shelf">
+      <!-- เพิ่มได้ตามต้องการ -->
+    </div>
+
+    <!-- ชั้นที่ 3 -->
+    <div class="shelf">
+      <!-- เพิ่มได้ตามต้องการ -->
+    </div>
+
+    <!-- ชั้นที่ 4 -->
+    <div class="shelf">
+      <!-- เพิ่มได้ตามต้องการ -->
+    </div>
+  </div>
 </body>
 </html>
