@@ -6,21 +6,28 @@
   <title>Bathroom2you Catalog</title>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    html {
+      zoom: reset;
+    }
+
     body {
       margin: 0;
       font-family: 'Kanit', sans-serif;
       background: #000;
       overflow: hidden;
+      width: 1280px;
+      height: 100vh;
+      position: relative;
     }
 
     .background {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100vw;
+      width: 1280px;
       height: 100vh;
       background: url('images/wood-bg.png') repeat-y center top;
-      background-size: cover;
+      background-size: contain;
       z-index: -1;
     }
 
@@ -35,7 +42,7 @@
     }
 
     .book {
-      position: fixed;
+      position: absolute;
       width: 120px;
       height: 180px;
       background: white;
@@ -67,7 +74,7 @@
   <h1>🚽 Bathroom2you Catalog</h1>
 
   <!-- Catalog 1 -->
-  <div class="book" style="top: 120px; left: 80px;">
+  <div class="book" style="top: 160px; left: 100px;">
     <a href="https://anyflip.com/ptylx/ulsc/" target="_blank">
       <img src="https://online.anyflip.com/ptylx/ulsc/files/shot.jpg" alt="Catalog 1">
       <p>Catalog 1</p>
@@ -75,7 +82,7 @@
   </div>
 
   <!-- Catalog 2 -->
-  <div class="book" style="top: 120px; left: 240px;">
+  <div class="book" style="top: 160px; left: 260px;">
     <a href="https://anyflip.com/ptylx/ozrh/" target="_blank">
       <img src="https://online.anyflip.com/ptylx/ozrh/files/shot.jpg" alt="Catalog 2">
       <p>Catalog 2</p>
@@ -83,7 +90,7 @@
   </div>
 
   <!-- Catalog 3 -->
-  <div class="book" style="top: 120px; left: 400px;">
+  <div class="book" style="top: 160px; left: 420px;">
     <a href="https://anyflip.com/ptylx/kkzn/" target="_blank">
       <img src="https://online.anyflip.com/ptylx/kkzn/files/shot.jpg" alt="Catalog 3">
       <p>Catalog 3</p>
@@ -91,7 +98,7 @@
   </div>
 
   <!-- Catalog 4 -->
-  <div class="book" style="top: 120px; left: 560px;">
+  <div class="book" style="top: 160px; left: 580px;">
     <a href="https://anyflip.com/ptylx/ysqk/" target="_blank">
       <img src="https://online.anyflip.com/ptylx/ysqk/files/shot.jpg" alt="Catalog 4">
       <p>Catalog 4</p>
@@ -99,12 +106,11 @@
   </div>
 
   <!-- Catalog 5 -->
-  <div class="book" style="top: 120px; left: 720px;">
+  <div class="book" style="top: 160px; left: 740px;">
     <a href="https://anyflip.com/ptylx/xrrr/" target="_blank">
       <img src="https://online.anyflip.com/ptylx/xrrr/files/shot.jpg" alt="Catalog 5">
       <p>Catalog 5</p>
     </a>
   </div>
-
 </body>
 </html>
