@@ -20,37 +20,22 @@
       width: 100vw;
       height: 100vh;
       background: url('images/wood-bg.png') repeat-y center top;
-      background-size: contain;
+      background-size: cover;
       z-index: -1;
     }
 
     h1 {
       text-align: center;
-      margin: 20px 0;
+      margin-top: 30px;
       font-size: 24px;
       color: #4b2e13;
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 10px 0;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 10;
-    }
-
-    .content-wrapper {
-      position: fixed;
-      top: 70px;
-      left: 0;
-      width: 100%;
-      height: calc(100vh - 70px);
-      overflow-y: auto;
     }
 
     .shelf-row {
       display: flex;
       justify-content: start;
       gap: 40px;
-      padding: 30px 60px;
+      padding: 0 60px;
       height: 230px;
       align-items: flex-start;
     }
@@ -64,11 +49,11 @@
       text-align: center;
       overflow: hidden;
       position: relative;
-      transition: transform 0.2s;
     }
 
     .catalog-card:hover {
       transform: scale(1.05);
+      transition: 0.2s;
     }
 
     .catalog-card a {
@@ -97,39 +82,39 @@
   <div class="background"></div>
   <h1>🛁 Bathroom2you Catalog</h1>
 
-  <div class="content-wrapper">
-    <div class="shelf-row">
-      <div class="catalog-card">
-        <a href="https://anyflip.com/ptylx/ulsc/" target="_blank">
-          <img src="https://online.anyflip.com/ptylx/ulsc/files/shot.jpg" alt="Catalog 1">
-          <p>Catalog 1</p>
-        </a>
-      </div>
-      <div class="catalog-card">
-        <a href="https://anyflip.com/ptylx/ozrh/" target="_blank">
-          <img src="https://online.anyflip.com/ptylx/ozrh/files/shot.jpg" alt="Catalog 2">
-          <p>Catalog 2</p>
-        </a>
-      </div>
-      <div class="catalog-card">
-        <a href="https://anyflip.com/ptylx/kkzn/" target="_blank">
-          <img src="https://online.anyflip.com/ptylx/kkzn/files/shot.jpg" alt="Catalog 3">
-          <p>Catalog 3</p>
-        </a>
-      </div>
-      <div class="catalog-card">
-        <a href="https://anyflip.com/ptylx/ysqk/" target="_blank">
-          <img src="https://online.anyflip.com/ptylx/ysqk/files/shot.jpg" alt="Catalog 4">
-          <p>Catalog 4</p>
-        </a>
-      </div>
-      <div class="catalog-card">
-        <a href="https://anyflip.com/ptylx/xrrr/" target="_blank">
-          <img src="https://online.anyflip.com/ptylx/xrrr/files/shot.jpg" alt="Catalog 5">
-          <p>Catalog 5</p>
-        </a>
-      </div>
+  <!-- ชั้นที่ 1 -->
+  <div class="shelf-row">
+    <div class="catalog-card">
+      <a href="https://anyflip.com/ptylx/ulsc/" target="_blank">
+        <img src="https://online.anyflip.com/ptylx/ulsc/files/shot.jpg" alt="Catalog 1">
+        <p>Catalog 1</p>
+      </a>
+    </div>
+    <div class="catalog-card">
+      <a href="https://anyflip.com/ptylx/ozrh/" target="_blank">
+        <img src="https://online.anyflip.com/ptylx/ozrh/files/shot.jpg" alt="Catalog 2">
+        <p>Catalog 2</p>
+      </a>
+    </div>
+    <div class="catalog-card">
+      <a href="https://anyflip.com/ptylx/kkzn/" target="_blank">
+        <img src="https://online.anyflip.com/ptylx/kkzn/files/shot.jpg" alt="Catalog 3">
+        <p>Catalog 3</p>
+      </a>
+    </div>
+    <div class="catalog-card">
+      <a href="https://anyflip.com/ptylx/ysqk/" target="_blank">
+        <img src="https://online.anyflip.com/ptylx/ysqk/files/shot.jpg" alt="Catalog 4">
+        <p>Catalog 4</p>
+      </a>
+    </div>
+    <div class="catalog-card">
+      <a href="https://anyflip.com/ptylx/xrrr/" target="_blank">
+        <img src="https://online.anyflip.com/ptylx/xrrr/files/shot.jpg" alt="Catalog 5">
+        <p>Catalog 5</p>
+      </a>
     </div>
   </div>
+
 </body>
 </html>
